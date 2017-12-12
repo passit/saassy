@@ -19,7 +19,7 @@ php artisan key:generate
 2. Go to your Laradock folder:
 ```
 cp env-example .env
-docker-compose up -d nginx mysql redis beanstalkd
+docker-compose up -d nginx mysql phpmyadmin
 ```
 
 3. Open the SaaSsy `.env` file and set the following: 
