@@ -8,20 +8,33 @@ SaaS POC Laravel Project
 * Passport - https://laravel.com/docs/5.5/passport
 
 # To Start Local Development Environment:
-1. Go to your Laradock folder:
+### Prerequisites -- ensure that [Docker](https://docs.docker.com/engine/installation/) and [Composer](https://getcomposer.org/doc/00-intro.md) are both installed on your machine: 
+
+1. Go to the root of your `saassy` Laravel project:
+```
+cp .env.example .env
+php artisan key:generate
+```
+
+2. Go to your Laradock folder:
 ```
 cp env-example .env
 docker-compose up -d nginx mysql redis beanstalkd
 ```
 
-2. Open the SaaSsy `.env` file and set the following: 
+3. Open the SaaSsy `.env` file and set the following: 
 ```
 DB_HOST=mysql
 REDIS_HOST=redis
 QUEUE_HOST=beanstalkd
 ```
 
-3. Open your browser and visit: 
+4. Install Composer packages: 
+```
+composer install
+```
+
+4. Open your browser and visit: 
 `http://localhost`
 
 # To Connect to MySQL 
