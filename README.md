@@ -8,7 +8,7 @@ SaaS POC Laravel Project
 * Passport - https://laravel.com/docs/5.5/passport
 
 # To Start Local Development Environment:
-### Prerequisites -- ensure that [Docker](https://docs.docker.com/engine/installation/) and [Composer](https://getcomposer.org/doc/00-intro.md) are both installed on your machine: 
+#### Prerequisites -- ensure that both [Docker](https://docs.docker.com/engine/installation/) and [Composer](https://getcomposer.org/doc/00-intro.md) are installed on your machine
 
 1. Go to the root of your `saassy` Laravel project:
 ```
@@ -34,7 +34,7 @@ QUEUE_HOST=beanstalkd
 composer install
 ```
 
-4. Open your browser and visit: 
+5. Open your browser and visit: 
 `http://localhost`
 
 # To Connect to MySQL 
@@ -47,3 +47,6 @@ DB_DATABASE=default
 DB_USERNAME=default
 DB_PASSWORD=secret
 ```
+
+Run database migrations: 
+`php artisan migrate`
