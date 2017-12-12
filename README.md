@@ -1,2 +1,2 @@
-# saassy
+# SaaSsy
 SaaS POC Laravel Project
