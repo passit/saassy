@@ -14,3 +14,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+/* Passport Vue components */
+Route::get('/oauth', function () {
+    return view('oauth_test');
+});
+
+
+/* Authentication Scaffolding */
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

@@ -50,3 +50,13 @@ DB_PASSWORD=secret
 
 Run database migrations: 
 `php artisan migrate`
+
+View database tables using phpmyadmin: 
+`http://localhost:8080/index.php`
+
+# Enable OAuth2 using Passport
+See documentation for installation and server deployment
+https://laravel.com/docs/5.5/passport 
+
+After server deployment, run: 
+`php artisan passport:keys`
